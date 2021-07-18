@@ -4,15 +4,25 @@
       <b-card class="border-md">
         <h2 class="f-Instagram text-center">InstaApp</h2>
         <hr />
-        <div class="d-flex justify-content-center" v-if="$route.path === '/'">
+        <div
+          class="d-flex justify-content-center"
+          v-if="$route.path === '/home'"
+        >
           <div>
-            <button class="btn btn-dark">Login</button>
+            <button class="btn btn-dark" @click="$router.push('/login')">
+              Login
+            </button>
           </div>
           <div class="mx-3 align-self-center">
             Or
           </div>
           <div>
-            <button class="btn btn-secondary">Register</button>
+            <button
+              class="btn btn-secondary"
+              @click="$router.push('/register')"
+            >
+              Register
+            </button>
           </div>
         </div>
         <Login v-else-if="$route.path === '/login'" />

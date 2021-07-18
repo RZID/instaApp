@@ -7,6 +7,33 @@
   font-family: Instagram;
 }
 
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.imageUser {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.feedImg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imgPeople-feed {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
 @media screen and (max-width: 768px) {
   .border-md {
     border: none !important;
